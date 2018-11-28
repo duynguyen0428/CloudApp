@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  vi_salon_cloud_app:
+    image: vi_salon_cloud_app
+    build:
+      context: .
+      dockerfile: Vi_Salon_Cloud_App/Dockerfile
+
+  booking.api:
+    image: booking.api
+    build:
+      context: .
+      dockerfile: Booking.API/Dockerfile
+
+
+  log.api:
+    image: log.api
+    build:
+      context: .
+      dockerfile: ../Log.API/Dockerfile
+
+
+  hairbyvicky:
+    image: hairbyvicky
+    build:
+      context: .
+      dockerfile: Web/HairByVicky/Dockerfile
+

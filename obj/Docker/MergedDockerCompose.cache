@@ -1,0 +1,29 @@
+services:
+  booking.api:
+    build:
+      context: C:\Users\dnguyen3\Documents\Visual Studio 2017\Projects\Vi_Salon_Cloud_App
+      dockerfile: Booking.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: booking.api
+    ports:
+    - 80/tcp
+  log.api:
+    build:
+      context: C:\Users\dnguyen3\Documents\Visual Studio 2017\Projects\Vi_Salon_Cloud_App
+      dockerfile: ../Log.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: log.api
+    ports:
+    - 80/tcp
+  vi_salon_cloud_app:
+    build:
+      context: C:\Users\dnguyen3\Documents\Visual Studio 2017\Projects\Vi_Salon_Cloud_App
+      dockerfile: Vi_Salon_Cloud_App/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: vi_salon_cloud_app
+    ports:
+    - 80/tcp
+version: '3.0'

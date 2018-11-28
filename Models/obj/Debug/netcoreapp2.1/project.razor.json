@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\dnguyen3\\Documents\\Visual Studio 2017\\Projects\\Vi_Salon_Cloud_App\\Models\\Models.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
